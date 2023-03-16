@@ -1,0 +1,36 @@
+# Appearance
+
+include ./gruvbox
+
+gaps outer 10
+gaps inner 5
+smart_gaps on
+
+output * bg wallpaper/gruv_city_1920-1080.png fill
+
+# Windows appearance
+
+font Iosevka 12
+
+## Colors
+
+set $border_current     $faded_green
+set $border_inactive    $dark0_soft
+set $border_urgent      $bright_orange
+
+set $bg 	        $dark0_hard
+set $bg_inactive    $dark0
+set $bg_urgent      $dark0_soft
+
+set $text           $light1
+set $text-inactive  $light4
+
+set $bar            $faded_blue
+set $child_bar      $faded_aqua
+
+## Window Type                  border              background      text            indicator   child_border
+
+client.focused                  $border_current     $bg             $text           $bar        $child_bar
+client.unfocused                $border_inactive    $bg_inactive    $text-inactive  $bar        $child_bar
+client.focused_inactive         $border_inactive    $bg_inactive    $text-inactive  $bar        $child_bar
+client.urgent                   $border_urgent      $bg_urgent      $text           $bar        $child_bar
