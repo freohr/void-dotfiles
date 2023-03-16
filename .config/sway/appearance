@@ -30,7 +30,7 @@ set $child_bar      $faded_aqua
 
 ## Window Type                  border              background      text            indicator       child_border
 
-client.focused                  $border_current     $bg             $text           $bg             $child_bar
-client.unfocused                $border_inactive    $bg_inactive    $text-inactive  $bg_inactive    $child_bar
-client.focused_inactive         $border_inactive    $bg_inactive    $text-inactive  $bg_inactive    $child_bar
-client.urgent                   $border_urgent      $bg_urgent      $text           $bg_urgent      $child_bar
+client.focused                  $border_current     $bg             $text           $bg             $bg
+client.unfocused                $border_inactive    $bg_inactive    $text-inactive  $bg_inactive    $bg_inactive
+client.focused_inactive         $border_inactive    $bg_inactive    $text-inactive  $bg_inactive    $bg_inactive
+client.urgent                   $border_urgent      $bg_urgent      $text           $bg_urgent      $bg_urgent
