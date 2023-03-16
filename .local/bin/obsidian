@@ -1,0 +1,1 @@
+dbus-run-session flatpak run md.obsidian.Obsidian
