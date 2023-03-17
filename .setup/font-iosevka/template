@@ -1,0 +1,23 @@
+# Template file for 'font-iosevka'
+pkgname=font-iosevka-nerd
+version=2.3.3
+revision=1
+create_wrksrc=yes
+depends="font-util"
+short_desc="Slender monospace sans-serif and slab-serif typeface, patched with additional glyphha"
+maintainer="Ryan L McIntyre <ryan@ryanlmcintyre.com>"
+license="OFL-1.1"
+homepage="https://nerdfonts.com"
+changelog="https://github.com/ryanoasis/nerd-fonts/raw/master/changelog.md"
+distfiles="https://raw.githubusercontent.com/ryanoasis/nerd-fonts/v${version}/LICENSE>LICENSE.txt
+https://github.com/ryanoasis/nerd-fonts/releases/download/v${version}/Iosevka.zip"
+checksum="1f6ad4edae6479aaace3112ede5279a23284ae54b2a34db66357aef5f64df160
+ 526638087347705f6604afa593907a715bfb5b49247bef36e8a12e9c4543e861"
+
+font_dirs="/usr/share/fonts/TTF"
+
+do_install() {
+	vmkdir usr/share/fonts/TTF
+	vcopy *.ttf usr/share/fonts/TTF
+	vlicense LICENSE.txt LICENSE.md
+}
