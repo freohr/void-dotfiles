@@ -2,8 +2,8 @@
 
 include ./gruvbox
 
-gaps outer 10
-gaps inner 5
+gaps outer 5
+gaps inner 2
 smart_gaps on
 
 output * bg wallpaper/gruv_city_1920-1080.png fill
@@ -14,23 +14,23 @@ font Iosevka 11
 
 ## Colors
 
-set $border_current     $faded_green
-set $border_inactive    $dark0_soft
+set $border_current     $faded_blue
+set $border_inactive    $dark0
 set $border_urgent      $bright_orange
 
-set $bg 	        $dark0_hard
+set $bg 	          $faded_blue
 set $bg_inactive    $dark0
 set $bg_urgent      $dark0_soft
 
-set $text           $light1
-set $text-inactive  $light4
+set $text           $dark0_hard
+set $text-inactive  $light3
 
 set $bar            $faded_blue
 set $child_bar      $faded_aqua
 
 ## Window Type                  border              background      text            indicator       child_border
 
-client.focused                  $border_current     $bg             $text           $bg             $bg
-client.unfocused                $border_inactive    $bg_inactive    $text-inactive  $bg_inactive    $bg_inactive
-client.focused_inactive         $border_inactive    $bg_inactive    $text-inactive  $bg_inactive    $bg_inactive
-client.urgent                   $border_urgent      $bg_urgent      $text           $bg_urgent      $bg_urgent
+client.focused                  $border_current     $bg             $text           $bg             $border_current
+client.unfocused                $border_inactive    $bg_inactive    $text-inactive  $bg_inactive    $border_inactive
+client.focused_inactive         $border_inactive    $bg_inactive    $text-inactive  $bg_inactive    $border_inactive
+client.urgent                   $border_urgent      $bg_urgent      $text           $bg_urgent      $border_urgent
