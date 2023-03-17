@@ -101,4 +101,4 @@ SAVEHIST=10000
 export PANDOC_DATA_DIR="$XDG_DATA_HOME/pandoc/"
 
 source ~/.config/zsh/bindings.zshrc
-source ~/.config/zshrc/alias.zshrc
+source ~/.config/zsh/alias.zshrc
