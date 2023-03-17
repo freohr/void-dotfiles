@@ -97,19 +97,8 @@ HISTFILE=~/.zhistory
 HISTSIZE=50000
 SAVEHIST=10000
 
-source ~/.config/zsh/bindings.zshrc
-
-typeset -g -A key
-if (( ${+terminfo[smkx]} && ${+terminfo[rmkx]} )); then
-	autoload -Uz add-zle-hook-widget
-	function zle_application_mode_start { echoti smkx }
-	function zle_application_mode_stop { echoti rmkx }
-	add-zle-hook-widget -Uz zle-line-init zle_application_mode_start
-	add-zle-hook-widget -Uz zle-line-finish zle_application_mode_stop
-fi
-
 # Personal Environment
 export PANDOC_DATA_DIR="$XDG_DATA_HOME/pandoc/"
 
+source ~/.config/zsh/bindings.zshrc
 source ~/.config/zshrc/alias.zshrc
-
