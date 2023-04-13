@@ -1,0 +1,23 @@
+# Template file for 'font-iosevka'
+pkgname=font-iosevka-aile
+version=22.0.1
+revision=1
+create_wrksrc=yes
+depends="font-util"
+short_desc="Slender quasi-proportional sans-serif typeface"
+maintainer="Renzhi Li<belleve@typeof.net>"
+license="OFL-1.1"
+homepage="https://typeof.net/Iosevka/"
+changelog="https://raw.githubusercontent.com/be5invis/Iosevka/v${version}/CHANGELOG.md"
+distfiles="https://raw.githubusercontent.com/be5invis/Iosevka/v${version}/LICENSE.md
+https://github.com/be5invis/Iosevka/releases/download/v${version}/super-ttc-iosevka-${version}.zip"
+checksum="1f6ad4edae6479aaace3112ede5279a23284ae54b2a34db66357aef5f64df160
+ 526638087347705f6604afa593907a715bfb5b49247bef36e8a12e9c4543e861"
+
+font_dirs="/usr/share/fonts/TTF"
+
+do_install() {
+	vmkdir usr/share/fonts/TTF
+	vcopy *.ttf usr/share/fonts/TTF
+	vlicense LICENSE.txt LICENSE.md
+}
