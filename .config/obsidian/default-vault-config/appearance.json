@@ -2,5 +2,11 @@
   "accentColor": "",
   "cssTheme": "Custom Gruvbox",
   "textFontFamily": "Iosevka Aile",
-  "monospaceFontFamily": "Iosevka Nerd Font Mono"
+  "monospaceFontFamily": "Iosevka Nerd Font Mono",
+  "enabledCssSnippets": [
+    "13th-age",
+    "13th-age-monsters",
+    "13th-age-items"
+  ],
+  "baseFontSize": 16
 }
