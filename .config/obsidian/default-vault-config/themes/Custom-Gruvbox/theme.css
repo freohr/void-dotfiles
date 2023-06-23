@@ -44,7 +44,7 @@
 
 .theme-dark {
     --background-primary: var(--dark0);
-    --background-primary-alt: var(--dark0);
+    --background-primary-alt: var(--dark0-soft);
     --background-secondary: var(--dark0-hard);
     --background-secondary-alt: var(--dark1);
     --text-normal: var(--light0);
@@ -68,7 +68,7 @@
     --text-accent: var(--bright-orange);
     --interactive-accent-rgb: var(--bright-orange);
     --inline-code: var(--bright-blue);
-    --code-block: var(--bright-blue);
+    --code-block: var(--light1);
     --vim-cursor: var(--bright-orange);
     --text-selection: rgba(168, 153, 132, 0.5);
     /* light4 */
@@ -121,7 +121,10 @@ body {
     --font-text-theme: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
 
     --font-monospace-theme: 'Hack Nerd Font', 'Source Code Pro', ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+
+    --file-line-width: 900px;
 }
+
 
 .theme-dark code[class*="language-"],
 .theme-dark pre[class*="language-"],
@@ -206,28 +209,28 @@ mark {
     color: var(--text-a) !important;
 }
 
-.HyperMD-codeblock-bg {
-    background-color: var(--pre-code) !important;
-}
 
-.HyperMD-codeblock {
-    line-height: 1.4em !important;
-    color: var(--code-block) !important;
-}
-
-.HyperMD-codeblock-begin {
-    border-top-left-radius: 4px !important;
-    border-top-right-radius: 4px !important;
-}
-
-.HyperMD-codeblock-end {
-    border-bottom-left-radius: 4px !important;
-    border-bottom-right-radius: 4px !important;
-}
 
 .cm-contentContainer {
     text-align: justify;
-    max-width: max(60%, 800px) !important;
+    width: max(60%, 800px) !important;
+    margin: inherit;
+}
+
+div.inline-title {
+    margin: auto;
+    width: fit-content;
+}
+
+.cm-embed-block, .cm-embed-block:hover {
+    overflow: initial;
+}
+
+.markdown-source-view.mod-cm6 .cm-content > [contenteditable=false] {
+    contain: initial !important;
+}
+.markdown-source-view.mod-cm6 .cm-content > .cm-embed-block,.markdown-source-view.mod-cm6 .cm-content > .cm-embed-block:hover  {
+    overflow: initial;
 }
 
 .cm-content,
@@ -260,11 +263,11 @@ td {
 }
 
 tr:nth-child(even) {
-    background-color: var(--table-row-even)
+    background-color: var(--background-primary)
 }
 
 tr:nth-child(odd) {
-    background-color: var(--table-row-odd)
+    background-color: var(--background-primary-alt)
 }
 
 tr:hover {
@@ -454,44 +457,44 @@ h6 a {
 
 .HyperMD-header-1,
 .markdown-preview-section h1 {
-    font-weight: 500 !important;
-    font-size: 2.2em !important;
-    color: var(--text-title-h1) !important;
+    font-weight: 500;
+    font-size: 2.2em;
+    color: var(--text-title-h1);
 }
 
 .HyperMD-header-2,
 .markdown-preview-section h2 {
-    font-weight: 500 !important;
-    font-size: 2.0em !important;
-    color: var(--text-title-h2) !important;
+    font-weight: 500;
+    font-size: 2.0em;
+    color: var(--text-title-h2);
 }
 
 .HyperMD-header-3,
 .markdown-preview-section h3 {
-    font-weight: 500 !important;
-    font-size: 1.8em !important;
-    color: var(--text-title-h3) !important;
+    font-weight: 500 ;
+    font-size: 1.8em ;
+    color: var(--text-title-h3);
 }
 
 .HyperMD-header-4,
 .markdown-preview-section h4 {
-    font-weight: 500 !important;
-    font-size: 1.6em !important;
-    color: var(--text-title-h4) !important;
+    font-weight: 500;
+    font-size: 1.6em;
+    color: var(--text-title-h4);
 }
 
 .HyperMD-header-5,
 .markdown-preview-section h5 {
-    font-weight: 500 !important;
-    font-size: 1.4em !important;
-    color: var(--text-title-h5) !important;
+    font-weight: 500;
+    font-size: 1.4em;
+    color: var(--text-title-h5);
 }
 
 .HyperMD-header-6,
 .markdown-preview-section h6 {
-    font-weight: 500 !important;
-    font-size: 1.2em !important;
-    color: var(--text-title-h6) !important;
+    font-weight: 500;
+    font-size: 1.2em;
+    color: var(--text-title-h6);
 }
 
 .suggestion-item.is-selected {
@@ -565,4 +568,64 @@ input.task-list-item-checkbox:checked {
 
 .workspace-leaf-content[data-type="image"] .view-content {
     background-color: var(--light0-soft);
+}
+
+/* Coloring YAML frontmatter  */
+
+/* color YAML key text */
+span.cm-atom.cm-hmd-frontmatter {
+    color: var(--neutral-aqua);
+}
+
+/* YAML Values: Text */
+span.cm-hmd-frontmatter.cm-meta ~ span.cm-hmd-frontmatter:not(.cm-number):not(.cm-meta) {
+    color: var(--bright-green);
+}
+
+/* YAML Values: Number */
+span.cm-number.cm-hmd-frontmatter {
+    color: var(--neutral-yellow) !important;
+}
+
+/* color YAML separator text */
+span.cm-meta.cm-hmd-frontmatter {
+}
+
+/* Codeblock coloring */
+.HyperMD-codeblock-bg {
+    background-color: var(--pre-code) !important;
+}
+
+.HyperMD-codeblock {
+    line-height: 1.4em !important;
+    color: var(--code-block) !important;
+}
+
+.HyperMD-codeblock-begin {
+    border-top-left-radius: 4px !important;
+    border-top-right-radius: 4px !important;
+}
+
+.HyperMD-codeblock-end {
+    border-bottom-left-radius: 4px !important;
+    border-bottom-right-radius: 4px !important;
+}
+
+.HyperMD-codeblock .cm-string {
+    color: var(--bright-green) !important;
+}
+.HyperMD-codeblock .cm-number {
+    color: var(--neutral-yellow) !important;
+}
+.HyperMD-codeblock .cm-atom {
+    color: var(--neutral-aqua) !important;
+}
+.HyperMD-codeblock .cm-variable {
+    color: var(--bright-blue) !important;
+}
+.HyperMD-codeblock .cm-operator {
+    color: var(--code-block) !important;
+}
+.HyperMD-codeblock .cm-property {
+    color: var(--bright-purple) !important;
 }

@@ -1,0 +1,357 @@
+{
+  "strategy": "english-only",
+  "cedictPath": "./cedict_ts.u8",
+  "matchStrategy": "prefix",
+  "fuzzyMatch": true,
+  "matchingWithoutEmoji": true,
+  "treatAccentDiacriticsAsAlphabeticCharacters": false,
+  "maxNumberOfSuggestions": 5,
+  "maxNumberOfWordsAsPhrase": 3,
+  "minNumberOfCharactersTriggered": 0,
+  "minNumberOfWordsTriggeredPhrase": 1,
+  "complementAutomatically": true,
+  "delayMilliSeconds": 0,
+  "disableSuggestionsDuringImeOn": false,
+  "insertAfterCompletion": true,
+  "firstCharactersDisableSuggestions": ":/^",
+  "useCommonPrefixCompletionOfSuggestion": false,
+  "patternsToSuppressTrigger": [
+    "^~~~.*",
+    "^```.*"
+  ],
+  "showMatchStrategy": true,
+  "showComplementAutomatically": true,
+  "showIndexingStatus": true,
+  "descriptionOnSuggestion": "Short",
+  "selectSuggestionKeys": "Enter",
+  "additionalCycleThroughSuggestionsKeys": "None",
+  "disableUpDownKeysForCycleThroughSuggestionsKeys": false,
+  "openSourceFileKey": "None",
+  "propagateEsc": false,
+  "enableCurrentFileComplement": false,
+  "currentFileMinNumberOfCharacters": 0,
+  "onlyComplementEnglishOnCurrentFileComplement": false,
+  "enableCurrentVaultComplement": false,
+  "currentVaultMinNumberOfCharacters": 0,
+  "includeCurrentVaultPathPrefixPatterns": "",
+  "excludeCurrentVaultPathPrefixPatterns": "",
+  "includeCurrentVaultOnlyFilesUnderCurrentDirectory": false,
+  "enableCustomDictionaryComplement": false,
+  "customDictionaryPaths": "https://raw.githubusercontent.com/first20hours/google-10000-english/master/google-10000-english-no-swears.txt",
+  "columnDelimiter": "Tab",
+  "customDictionaryWordRegexPattern": "",
+  "delimiterToHideSuggestion": "",
+  "delimiterToDivideSuggestionsForDisplayFromInsertion": "",
+  "caretLocationSymbolAfterComplement": "",
+  "displayedTextSuffix": " => ...",
+  "enableInternalLinkComplement": true,
+  "suggestInternalLinkWithAlias": true,
+  "excludeInternalLinkPathPrefixPatterns": "",
+  "updateInternalLinksOnSave": true,
+  "insertAliasTransformedFromDisplayedInternalLink": {
+    "enabled": false,
+    "beforeRegExp": "",
+    "after": ""
+  },
+  "frontMatterKeyForExclusionInternalLink": "",
+  "enableFrontMatterComplement": true,
+  "frontMatterComplementMatchStrategy": "inherit",
+  "insertCommaAfterFrontMatterCompletion": false,
+  "intelligentSuggestionPrioritization": {
+    "historyFilePath": "",
+    "maxDaysToKeepHistory": 30,
+    "maxNumberOfHistoryToKeep": 0
+  },
+  "disableOnMobile": false,
+  "showLogAboutPerformanceInConsole": false,
+  "selectionHistoryTree": {
+    "person": {
+      "person": {
+        "frontMatter": {
+          "count": 16,
+          "lastUpdated": 1682678938525
+        }
+      }
+    },
+    "eldolan": {
+      "eldolan": {
+        "frontMatter": {
+          "count": 13,
+          "lastUpdated": 1682678932645
+        }
+      }
+    },
+    "lamplighters": {
+      "lamplighters": {
+        "frontMatter": {
+          "count": 3,
+          "lastUpdated": 1682678940371
+        }
+      }
+    },
+    "diabolist": {
+      "diabolist": {
+        "frontMatter": {
+          "count": 3,
+          "lastUpdated": 1682716332637
+        }
+      }
+    },
+    "lich-king": {
+      "lich-king": {
+        "frontMatter": {
+          "count": 2,
+          "lastUpdated": 1682677026442
+        }
+      }
+    },
+    "seekers-of-the-lost": {
+      "seekers-of-the-lost": {
+        "frontMatter": {
+          "count": 2,
+          "lastUpdated": 1682678460272
+        }
+      }
+    },
+    "dead-vaults": {
+      "dead-vaults": {
+        "frontMatter": {
+          "count": 1,
+          "lastUpdated": 1682676860872
+        }
+      }
+    },
+    "lead-2": {
+      "lead-2": {
+        "frontMatter": {
+          "count": 8,
+          "lastUpdated": 1682716330762
+        }
+      }
+    },
+    "silver-shields": {
+      "silver-shields": {
+        "frontMatter": {
+          "count": 1,
+          "lastUpdated": 1682676944061
+        }
+      }
+    },
+    "mithril-school": {
+      "mithril-school": {
+        "frontMatter": {
+          "count": 1,
+          "lastUpdated": 1682677030237
+        }
+      }
+    },
+    "place": {
+      "place": {
+        "frontMatter": {
+          "count": 8,
+          "lastUpdated": 1682678540150
+        }
+      }
+    },
+    "district": {
+      "district": {
+        "frontMatter": {
+          "count": 1,
+          "lastUpdated": 1682677191563
+        }
+      }
+    },
+    "wizard-schools": {
+      "wizard-schools": {
+        "frontMatter": {
+          "count": 1,
+          "lastUpdated": 1682678605490
+        }
+      }
+    },
+    "archmage": {
+      "archmage": {
+        "frontMatter": {
+          "count": 3,
+          "lastUpdated": 1682678803818
+        }
+      }
+    },
+    "eldricht-master-school": {
+      "eldricht-master-school": {
+        "frontMatter": {
+          "count": 2,
+          "lastUpdated": 1682678717985
+        }
+      }
+    },
+    "city": {
+      "city": {
+        "frontMatter": {
+          "count": 1,
+          "lastUpdated": 1682678715770
+        }
+      }
+    },
+    "emperor": {
+      "emperor": {
+        "frontMatter": {
+          "count": 1,
+          "lastUpdated": 1682678726955
+        }
+      }
+    },
+    "lead-1": {
+      "lead-1": {
+        "frontMatter": {
+          "count": 1,
+          "lastUpdated": 1682678756633
+        }
+      }
+    },
+    "faction": {
+      "faction": {
+        "frontMatter": {
+          "count": 1,
+          "lastUpdated": 1682678794079
+        }
+      }
+    },
+    "Cloak of the Grey Lady": {
+      "Cloak of the Grey Lady": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1682712794597
+        }
+      }
+    },
+    "Squirming Mermaid": {
+      "Squirming Mermaid": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1682715318188
+        }
+      }
+    },
+    "Jeskill": {
+      "Jeskill": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1682715480868
+        }
+      }
+    },
+    "The Alexandrian » Node-Based Scenario Design – Part 5 Plot vs Node": {
+      "The Alexandrian » Node-Based Scenario Design – Part 5 Plot vs Node": {
+        "internalLink": {
+          "count": 2,
+          "lastUpdated": 1682896627078
+        }
+      }
+    },
+    "dwarf-king": {
+      "dwarf-king": {
+        "frontMatter": {
+          "count": 1,
+          "lastUpdated": 1682717986139
+        }
+      }
+    },
+    "elf-queen": {
+      "elf-queen": {
+        "frontMatter": {
+          "count": 1,
+          "lastUpdated": 1682717991563
+        }
+      }
+    },
+    "item-statblock": {
+      "item-statblock": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1682788764308
+        }
+      }
+    },
+    "Imp-influenced Sailor": {
+      "Imp-influenced Sailor": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1682883536966
+        }
+      }
+    },
+    "base-item-statblock": {
+      "base-item-statblock": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1682886728668
+        }
+      }
+    },
+    "The Undying Peerage": {
+      "The Undying Peerage": {
+        "internalLink": {
+          "count": 2,
+          "lastUpdated": 1683037201553
+        }
+      }
+    },
+    "Elsa Whiterose": {
+      "Elsa Whiterose": {
+        "internalLink": {
+          "count": 2,
+          "lastUpdated": 1682891134862
+        }
+      }
+    },
+    "Altercation on the Pier": {
+      "Altercation on the Pier": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1682892946078
+        }
+      }
+    },
+    "Grayson": {
+      "Grayson": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1682893306826
+        }
+      }
+    },
+    "Jalen": {
+      "Jalen": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1682893403768
+        }
+      }
+    },
+    "slyflourish.com - 13th Age Icon Roll Benefits": {
+      "slyflourish.com - 13th Age Icon Roll Benefits": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1682896150698
+        }
+      }
+    },
+    "Demon Abilities": {
+      "Demon Abilities": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1682955995258
+        }
+      }
+    },
+    "Assistance from the Icons": {
+      "Assistance from the Icons": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1682980683769
+        }
+      }
+    }
+  }
+}
