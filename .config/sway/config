@@ -34,12 +34,22 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
 
 input type:touchpad {
     dwt enabled
-    natural_scroll enabled
+    natural_scroll disabled 
+    middle_emulation enabled
 }
 
 input "1267:1877:Elan_Touchpad" {
     tap_button_map lrm
     scroll_method edge
+    click_method clickfinger
+}
+
+input type:touch {
+    dwt enabled
+    tap enabled
+    tap_button_map lmr
+    drag enabled
+    middle_emulation enabled
 }
 
 input type:keyboard {
