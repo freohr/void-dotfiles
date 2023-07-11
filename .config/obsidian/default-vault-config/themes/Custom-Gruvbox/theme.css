@@ -211,6 +211,7 @@ mark {
 
 
 
+.markdown-preview-sizer,
 .cm-contentContainer {
     text-align: justify;
     width: max(60%, 800px) !important;
@@ -628,4 +629,9 @@ span.cm-meta.cm-hmd-frontmatter {
 }
 .HyperMD-codeblock .cm-property {
     color: var(--bright-purple) !important;
+}
+
+.HyperMD-list-line-2 .cm-formatting-list-ol.cm-list-2,
+ol ol {
+    list-style-type: lower-alpha;
 }
